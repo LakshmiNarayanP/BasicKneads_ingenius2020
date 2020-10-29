@@ -22,23 +22,38 @@ class _WelcomePageState extends State<WelcomePage> {
         ),
         child: Column(
           children: [
+            SizedBox(width: 50.0),
             Text('Welcome'),
             GFAvatar(
                 backgroundImage: AssetImage('images/leaf.png'),
                 shape: GFAvatarShape.square),
-            RaisedButton(
-              child: Text(
-                "Login",
-                style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
-              ),
-              onPressed: () => {print('pressed')},
-              color: Colors.grey[850],
-              textColor: Colors.white,
-              padding: EdgeInsets.all(8.0),
-              splashColor: Colors.grey,
-            )
+            WPRaisedButton(buttonTitle: 'Login'),
+            WPRaisedButton(buttonTitle: 'Sign Up'),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class WPRaisedButton extends StatelessWidget {
+  const WPRaisedButton({this.buttonTitle});
+
+  final String buttonTitle;
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      child: Text(
+        buttonTitle,
+        style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
+      ),
+      onPressed: () => {print('pressed')},
+      color: Colors.grey[850],
+      textColor: Colors.white,
+      padding: EdgeInsets.all(8.0),
+      splashColor: Colors.grey,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18.0),
       ),
     );
   }
