@@ -21,9 +21,13 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(width: 50.0),
-            Text('Welcome'),
+            Text(
+              'Welcome',
+              style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
+            ),
             GFAvatar(
                 backgroundImage: AssetImage('images/leaf.png'),
                 shape: GFAvatarShape.square),
@@ -45,7 +49,7 @@ class WPRaisedButton extends StatelessWidget {
     return RaisedButton(
       child: Text(
         buttonTitle,
-        style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
+        style: TextStyle(fontFamily: 'Poppins', fontSize: 20),
       ),
       onPressed: () => {print('pressed')},
       color: Colors.grey[850],
