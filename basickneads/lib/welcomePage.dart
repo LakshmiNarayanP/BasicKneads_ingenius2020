@@ -29,7 +29,8 @@ class _WelcomePageState extends State<WelcomePage> {
             RaisedButton(
               child: Text(
                 "Login",
-                style: TextStyle(fontSize: 20),
+                style:
+                    TextStyle(fontFamily: 'Pacifico-Regular.ttf', fontSize: 20),
               ),
               onPressed: () => {print('pressed')},
               color: Colors.grey[850],
