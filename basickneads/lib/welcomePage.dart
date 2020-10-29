@@ -12,11 +12,11 @@ class _WelcomePageState extends State<WelcomePage> {
     return Container(
       decoration: kDoodle,
       child: Card(
-        color: Colors.orange[4300],
+        color: Colors.orange[400],
         margin: EdgeInsets.symmetric(vertical: 100.0, horizontal: 10),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(10.0),
+            Radius.circular(20.0),
           ),
         ),
       ),
