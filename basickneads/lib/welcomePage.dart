@@ -24,7 +24,7 @@ class _WelcomePageState extends State<WelcomePage> {
             children: [
               Text('Welcome'),
               GFAvatar(
-                  backgroundImage: AssetImage('image/leaf.png'),
+                  backgroundImage: AssetImage('images/leaf.png'),
                   shape: GFAvatarShape.square),
             ],
           )),
