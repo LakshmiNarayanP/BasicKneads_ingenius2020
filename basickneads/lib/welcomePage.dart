@@ -11,8 +11,15 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget build(BuildContext context) {
     return Container(
       decoration: kDoodle,
-      child: Card(
-        color: Color(0xFFB800),
+      child: Column(
+        children: [
+          SizedBox(
+            width: 30.0,
+          ),
+          Card(
+            color: Color(0xFFB800),
+          ),
+        ],
       ),
     );
   }
