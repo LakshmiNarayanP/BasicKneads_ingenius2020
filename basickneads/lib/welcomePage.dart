@@ -15,7 +15,7 @@ class _WelcomePageState extends State<WelcomePage> {
         color: Color(0xFFb800),
         margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 30),
         child: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(80.0),
         ),
       ),
     );
