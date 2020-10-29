@@ -13,7 +13,7 @@ class _WelcomePageState extends State<WelcomePage> {
       decoration: kDoodle,
       child: Card(
         color: Color(0xFFb800),
-        margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 30),
+        margin: EdgeInsets.symmetric(vertical: 100.0, horizontal: 30),
         child: Padding(
           padding: EdgeInsets.all(80.0),
         ),
