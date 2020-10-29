@@ -13,21 +13,22 @@ class _WelcomePageState extends State<WelcomePage> {
     return Container(
       decoration: kDoodle,
       child: Card(
-          color: Colors.orange[400],
-          margin: EdgeInsets.symmetric(vertical: 100.0, horizontal: 10),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(20.0),
-            ),
+        color: Colors.orange[400],
+        margin: EdgeInsets.symmetric(vertical: 100.0, horizontal: 10),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(20.0),
           ),
-          child: Column(
-            children: [
-              Text('Welcome'),
-              GFAvatar(
-                  backgroundImage: AssetImage('images/leaf.png'),
-                  shape: GFAvatarShape.square),
-            ],
-          )),
+        ),
+        child: Column(
+          children: [
+            Text('Welcome'),
+            GFAvatar(
+                backgroundImage: AssetImage('images/leaf.png'),
+                shape: GFAvatarShape.square),
+          ],
+        ),
+      ),
     );
   }
 }
