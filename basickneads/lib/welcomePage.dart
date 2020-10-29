@@ -25,7 +25,7 @@ class _WelcomePageState extends State<WelcomePage> {
           children: [
             SizedBox(width: 50.0),
             Text(
-              'Welcome',
+              'Welcome!',
               style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
             ),
             GFAvatar(
