@@ -21,13 +21,14 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(width: 50.0),
+            SizedBox(height: 50.0),
             Text(
               'Welcome!',
-              style: TextStyle(fontFamily: 'Pacifico', fontSize: 20),
+              style: TextStyle(fontFamily: 'Pacifico', fontSize: 40),
             ),
+            SizedBox(height: 50.0),
             GFAvatar(
                 backgroundImage: AssetImage('images/leaf.png'),
                 shape: GFAvatarShape.square),
