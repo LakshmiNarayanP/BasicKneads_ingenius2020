@@ -38,22 +38,3 @@ class _WelcomePageState extends State<WelcomePage> {
     );
   }
 }
-
-class OrangeCard extends StatelessWidget {
-  OrangeCard({this.container});
-
-  final Container container;
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: Colors.orange[400],
-      margin: EdgeInsets.symmetric(vertical: 120.0, horizontal: 10),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(20.0),
-        ),
-      ),
-      child: container,
-    );
-  }
-}
