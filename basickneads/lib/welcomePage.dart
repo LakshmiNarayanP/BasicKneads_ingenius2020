@@ -26,6 +26,17 @@ class _WelcomePageState extends State<WelcomePage> {
             GFAvatar(
                 backgroundImage: AssetImage('images/leaf.png'),
                 shape: GFAvatarShape.square),
+            RaisedButton(
+              child: Text(
+                "Login",
+                style: TextStyle(fontSize: 20),
+              ),
+              onPressed: () => {print('pressed')},
+              color: Colors.grey[850],
+              textColor: Colors.white,
+              padding: EdgeInsets.all(8.0),
+              splashColor: Colors.grey,
+            )
           ],
         ),
       ),
