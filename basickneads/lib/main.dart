@@ -8,8 +8,11 @@ import 'startingpages/signuppages/signup1.dart';
 import 'startingpages/signuppages/signup2.dart';
 import 'startingpages/signuppages/signup3.dart';
 import 'startingpages/allsetPage.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
