@@ -63,7 +63,7 @@ class _Signup2State extends State<Signup2> {
                           ),
                           SizedBox(height: 20.0),
                           EnterField(
-                            fieldTitle: 'Date of Birth:',
+                            fieldTitle: 'Date of Birth (DD/MM/YYYY):',
                             onChanged: (value) {
                               dob = value;
                             },
