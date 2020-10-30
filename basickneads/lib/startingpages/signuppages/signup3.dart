@@ -45,7 +45,7 @@ class _Signup3State extends State<Signup3> {
                         Navigator.pop(context),
                         Navigator.pop(context),
                         Navigator.pop(context),
-                        Navigator.pushNamed(context, '/signup2')
+                        Navigator.pushNamed(context, '/allsetpage')
                       },
                     ),
                   ),
