@@ -68,13 +68,14 @@ class EnterField extends StatelessWidget {
   EnterField({
     this.fieldTitle,
     this.onChanged,
-    this.keyboardType, //this.obscureText,
+    this.keyboardType,
+    this.obscureText,
   });
 
   final String fieldTitle;
   final Function onChanged;
   final TextInputType keyboardType;
-  //final bool obscureText;
+  final bool obscureText;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -96,7 +97,7 @@ class EnterField extends StatelessWidget {
             shadowColor: Colors.grey[400],
             borderRadius: BorderRadius.all(Radius.circular(30.0)),
             child: TextField(
-              //obscureText: obscureText,
+              obscureText: obscureText,
               keyboardType: keyboardType,
               onChanged: onChanged,
               decoration: InputDecoration(

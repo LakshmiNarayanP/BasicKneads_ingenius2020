@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                 EnterField(
                   fieldTitle: 'Username:',
                   keyboardType: TextInputType.emailAddress,
-                  //obscureText: false,
+                  obscureText: false,
                   onChanged: (value) {
                     email = value;
                   },
@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                 EnterField(
                   fieldTitle: 'Password:',
                   keyboardType: TextInputType.text,
-                  //obscureText: true,
+                  obscureText: true,
                   onChanged: (value) {
                     password = value;
                   },
