@@ -56,8 +56,11 @@ class _LoginPageState extends State<LoginPage> {
                     try {
                       final newUser = await _auth.signInWithEmailAndPassword(
                           email: email, password: password);
-                      if (newUser != null)
+                      if (newUser != null) {
+                        Navigator.popUntil(
+                            context, ModalRoute.withName('/welcomepage'));
                         Navigator.pushNamed(context, '/allsetpage');
+                      }
                       setState(() {
                         showSpinner = false;
                       });
