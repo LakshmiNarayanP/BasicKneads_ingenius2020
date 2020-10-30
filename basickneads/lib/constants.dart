@@ -10,17 +10,6 @@ BoxDecoration kDoodle = BoxDecoration(
   ),
 );
 
-Card kOrangeCard = Card(
-  color: Colors.orange[400],
-  margin: EdgeInsets.symmetric(vertical: 120.0, horizontal: 10),
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.all(
-      Radius.circular(20.0),
-    ),
-  ),
-  child: Container(),
-);
-
 class OrangeCard extends StatelessWidget {
   OrangeCard({@required this.container});
 
@@ -35,7 +24,14 @@ class OrangeCard extends StatelessWidget {
           Radius.circular(20.0),
         ),
       ),
-      child: container,
+      child: Column(
+        children: [
+          SizedBox(
+            height: 20.0,
+          ),
+          container,
+        ],
+      ),
     );
   }
 }

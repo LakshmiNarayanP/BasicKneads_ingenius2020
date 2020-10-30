@@ -1,7 +1,9 @@
+import 'package:basickneads/signuppages/signup1.dart';
 import 'package:flutter/material.dart';
 import 'splashScreen.dart';
 import 'welcomePage.dart';
 import 'loginPage.dart';
+import 'signuppages/signup1.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         '/welcomepage': (context) => WelcomePage(),
-        '/loginpage': (context) => LoginPage()
+        '/loginpage': (context) => LoginPage(),
+        '/signup1': (context) => Signup1(),
       },
     );
   }
