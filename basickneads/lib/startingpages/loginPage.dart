@@ -31,6 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 EnterField(
                   fieldTitle: 'Username:',
+                  keyboardType: TextInputType.emailAddress,
                   onChanged: (value) {
                     email = value;
                   },
