@@ -17,7 +17,6 @@ class _WelcomePageState extends State<WelcomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 30.0),
               Text(
                 'Welcome!',
                 style: TextStyle(fontFamily: 'Pacifico', fontSize: 40),
@@ -33,7 +32,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 onPressed: () => Navigator.pushNamed(context, '/loginpage'),
               ),
               SizedBox(height: 30.0),
-              WPRaisedButton(buttonTitle: 'Sign Up'),
+              WPRaisedButton(
+                buttonTitle: 'Sign Up',
+                onPressed: () => Navigator.pushNamed(context, '/signup1'),
+              ),
             ],
           ),
         ),

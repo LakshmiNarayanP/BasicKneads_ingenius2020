@@ -15,9 +15,6 @@ class _LoginPageState extends State<LoginPage> {
         container: Container(
           child: Column(
             children: [
-              SizedBox(
-                height: 20.0,
-              ),
               Text(
                 'Login',
                 style: kPoppinTitle,
