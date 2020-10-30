@@ -8,6 +8,8 @@ class LoginPage extends StatefulWidget {
   _LoginPageState createState() => _LoginPageState();
 }
 
+//Code copied from firebase branch
+
 class _LoginPageState extends State<LoginPage> {
   final _auth = FirebaseAuth.instance;
   String email, password;
@@ -40,8 +42,11 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15.0),
                 EnterField(
                   fieldTitle: 'Password:',
-                  obscureText: true,
                   keyboardType: TextInputType.text,
+                  obscureText: true,
+                  onChanged: (value) {
+                    password = value;
+                  },
                 ),
                 SizedBox(height: 25.0),
                 WPRaisedButton(
