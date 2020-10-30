@@ -40,12 +40,9 @@ class _Signup3State extends State<Signup3> {
                     child: WPRaisedButton(
                       buttonTitle: 'Finish',
                       onPressed: () => {
-                        Navigator.pop(context),
-                        Navigator.pop(context),
-                        Navigator.pop(context),
-                        Navigator.pop(context),
-                        Navigator.pop(context),
-                        Navigator.pushNamed(context, '/allsetpage')
+                        Navigator.popUntil(
+                            context, ModalRoute.withName('/welcomepage')),
+                        Navigator.pushNamed(context, '/allsetpage'),
                       },
                     ),
                   ),
