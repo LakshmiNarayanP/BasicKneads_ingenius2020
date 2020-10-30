@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                       if (newUser != null) {
                         Navigator.popUntil(
                             context, ModalRoute.withName('/welcomepage'));
-                        Navigator.pushNamed(context, '/allsetpage');
+                        Navigator.pushNamed(context, '/HomePage_Meals');
                       }
                       setState(() {
                         showSpinner = false;
