@@ -32,6 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                 EnterField(
                   fieldTitle: 'Username:',
                   keyboardType: TextInputType.emailAddress,
+                  obscureText: false,
                   onChanged: (value) {
                     email = value;
                   },
@@ -39,10 +40,8 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15.0),
                 EnterField(
                   fieldTitle: 'Password:',
+                  obscureText: true,
                   keyboardType: TextInputType.text,
-                  onChanged: (value) {
-                    password = value;
-                  },
                 ),
                 SizedBox(height: 25.0),
                 WPRaisedButton(
@@ -54,8 +53,11 @@ class _LoginPageState extends State<LoginPage> {
                     try {
                       final newUser = await _auth.signInWithEmailAndPassword(
                           email: email, password: password);
-                      if (newUser != null)
+                      if (newUser != null) {
+                        Navigator.popUntil(
+                            context, ModalRoute.withName('/welcomepage'));
                         Navigator.pushNamed(context, '/allsetpage');
+                      }
                       setState(() {
                         showSpinner = false;
                       });
