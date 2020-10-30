@@ -22,15 +22,73 @@ class _Signup2State extends State<Signup2> {
               SizedBox(
                 height: 20.0,
               ),
-              EnterField(fieldTitle: 'Email Address:'),
-              SizedBox(height: 10.0),
-              EnterField(fieldTitle: 'Password:'),
-              SizedBox(height: 10.0),
-              EnterField(fieldTitle: 'Confirm Password:'),
-              SizedBox(height: 20.0),
-              WPRaisedButton(
-                buttonTitle: 'Next',
-                onPressed: () => Navigator.pushNamed(context, '/signup3'),
+              Container(
+                height: 400.0,
+                width: 400.0,
+                child: ListView(
+                  physics: AlwaysScrollableScrollPhysics(),
+                  children: [
+                    Column(
+                      children: <Widget>[
+                        EnterField(fieldTitle: 'Name:'),
+                        SizedBox(height: 10.0),
+                        EnterField(fieldTitle: 'Password:'),
+                        SizedBox(height: 10.0),
+                        EnterField(fieldTitle: 'Email ID:'),
+                        EnterField(fieldTitle: 'Date of Birth:'),
+                        SizedBox(height: 10.0),
+                        EnterField(fieldTitle: 'College Name:'),
+                        SizedBox(height: 10.0),
+                        EnterField(fieldTitle: 'College Roll Number:'),
+                        SizedBox(height: 40.0),
+                        SizedBox(height: 20.0),
+                        Row(
+                          children: [
+                            Padding(padding: EdgeInsets.only(left: 20.0)),
+                            Expanded(
+                              child: WPRaisedButton(
+                                buttonTitle: 'Previous',
+                                onPressed: () =>
+                                    Navigator.pop(context, '/signup2'),
+                              ),
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15.0)),
+                            Expanded(
+                              child: WPRaisedButton(
+                                  buttonTitle: 'Finish',
+                                  onPressed: () => {print('Pressed')}
+                                  //() async {
+                                  //   setState(() {
+                                  //     showSpinner = true;
+                                  //   });
+                                  //   try {
+                                  //     final newUser =
+                                  //         await _auth.createUserWithEmailAndPassword(
+                                  //             email: email, password: password);
+                                  //     if (newUser != null)
+                                  //       Navigator.popUntil(
+                                  //           context, ModalRoute.withName('/welcomepage')),
+                                  //       Navigator.pushNamed(context, '/allsetpage'),
+                                  //     setState(() {
+                                  //       showSpinner = false;
+                                  //     });
+                                  //   } catch (e) {
+                                  //     print(e);
+                                  //   }
+                                  // },
+
+                                  //     },
+                                  ),
+                              // WPRaisedButton(
+                              //   buttonTitle: 'Next',
+                              //   onPressed: () => Navigator.pushNamed(context, '/signup3'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
