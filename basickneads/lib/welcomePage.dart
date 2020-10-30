@@ -33,7 +33,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 onPressed: () => Navigator.pushNamed(context, '/loginpage'),
               ),
               SizedBox(height: 30.0),
-              WPRaisedButton(buttonTitle: 'Sign Up'),
+              WPRaisedButton(
+                buttonTitle: 'Sign Up',
+                onPressed: () => Navigator.pushNamed(context, '/signup1'),
+              ),
             ],
           ),
         ),
