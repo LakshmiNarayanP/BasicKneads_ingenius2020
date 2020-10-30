@@ -24,6 +24,7 @@ dependencies:
   font_awesome_flutter: ^8.10.0
   firebase_core: ^0.5.1
   firebase_auth: ^0.18.2
+  modal_progress_hud: ^0.1.3
 
 dev_dependencies:
   flutter_test:
