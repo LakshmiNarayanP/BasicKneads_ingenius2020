@@ -12,7 +12,19 @@ class _LoginPageState extends State<LoginPage> {
     return Container(
       decoration: kDoodle,
       child: OrangeCard(
-        container: Container(),
+        container: Container(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 20.0,
+              ),
+              Text(
+                'Login',
+                style: kPoppinTitle,
+              )
+            ],
+          ),
+        ),
       ),
     );
   }

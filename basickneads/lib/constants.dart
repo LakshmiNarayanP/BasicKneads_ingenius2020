@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+TextStyle kPoppinTitle = TextStyle(fontFamily: 'Poppins', fontSize: 40);
 BoxDecoration kDoodle = BoxDecoration(
   color: Colors.white,
   image: DecorationImage(
