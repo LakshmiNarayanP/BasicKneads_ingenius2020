@@ -20,7 +20,7 @@ Card kOrangeCard = Card(
 );
 
 class OrangeCard extends StatelessWidget {
-  OrangeCard({this.container});
+  OrangeCard({@required this.container});
 
   final Container container;
   @override
@@ -39,9 +39,10 @@ class OrangeCard extends StatelessWidget {
 }
 
 class WPRaisedButton extends StatelessWidget {
-  WPRaisedButton({this.buttonTitle});
+  WPRaisedButton({this.buttonTitle, this.onPressed});
 
   final String buttonTitle;
+  final Function onPressed;
   @override
   Widget build(BuildContext context) {
     return ButtonTheme(
