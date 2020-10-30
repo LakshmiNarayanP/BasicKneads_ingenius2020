@@ -28,7 +28,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 radius: 100.0,
               ),
               SizedBox(height: 30.0),
-              WPRaisedButton(buttonTitle: 'Login'),
+              WPRaisedButton(
+                buttonTitle: 'Login',
+                onPressed: () => Navigator.pushNamed(context, '/loginpage'),
+              ),
               SizedBox(height: 30.0),
               WPRaisedButton(buttonTitle: 'Sign Up'),
             ],
