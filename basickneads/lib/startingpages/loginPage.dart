@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                       final newUser = await _auth.signInWithEmailAndPassword(
                           email: email, password: password);
                       if (newUser != null)
-                        Navigator.pushNamed(context, '/welcomepage');
+                        Navigator.pushNamed(context, '/allsetpage');
                       setState(() {
                         showSpinner = false;
                       });
