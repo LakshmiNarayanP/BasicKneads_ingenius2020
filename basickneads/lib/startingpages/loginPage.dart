@@ -16,53 +16,56 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Container(
       decoration: kDoodle,
-      child: OrangeCard(
-        container: Container(
-          child: Column(
-            children: [
-              Text(
-                'Login',
-                style: kPoppinTitle,
-              ),
-              SizedBox(
-                height: 40.0,
-              ),
-              EnterField(
-                fieldTitle: 'Username:',
-                onChanged: (value) {
-                  email = value;
-                },
-              ),
-              SizedBox(height: 15.0),
-              EnterField(
-                fieldTitle: 'Password:',
-                onChanged: (value) {
-                  password = value;
-                },
-              ),
-              SizedBox(height: 25.0),
-              WPRaisedButton(
-                buttonTitle: 'Login',
-                onPressed: () async {
-                  setState(() {
-                    showSpinner = true;
-                  });
-                  try {
-                    final newUser = await _auth.signInWithEmailAndPassword(
-                        email: email, password: password);
-                    if (newUser != null)
-                      Navigator.pushNamed(context, '/welcomepage');
+      child: ModalProgressHUD(
+        inAsyncCall: showSpinner,
+        child: OrangeCard(
+          container: Container(
+            child: Column(
+              children: [
+                Text(
+                  'Login',
+                  style: kPoppinTitle,
+                ),
+                SizedBox(
+                  height: 40.0,
+                ),
+                EnterField(
+                  fieldTitle: 'Username:',
+                  onChanged: (value) {
+                    email = value;
+                  },
+                ),
+                SizedBox(height: 15.0),
+                EnterField(
+                  fieldTitle: 'Password:',
+                  onChanged: (value) {
+                    password = value;
+                  },
+                ),
+                SizedBox(height: 25.0),
+                WPRaisedButton(
+                  buttonTitle: 'Login',
+                  onPressed: () async {
                     setState(() {
-                      showSpinner = false;
+                      showSpinner = true;
                     });
-                  } catch (e) {
-                    print(e);
-                  }
-                },
-              ),
-              SizedBox(height: 25.0),
-              SocialButtons(),
-            ],
+                    try {
+                      final newUser = await _auth.signInWithEmailAndPassword(
+                          email: email, password: password);
+                      if (newUser != null)
+                        Navigator.pushNamed(context, '/welcomepage');
+                      setState(() {
+                        showSpinner = false;
+                      });
+                    } catch (e) {
+                      print(e);
+                    }
+                  },
+                ),
+                SizedBox(height: 25.0),
+                SocialButtons(),
+              ],
+            ),
           ),
         ),
       ),
