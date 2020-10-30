@@ -27,13 +27,38 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 40.0,
               ),
-              EnterField(fieldTitle: 'Username:'),
+              EnterField(
+                fieldTitle: 'Username:',
+                onChanged: (value) {
+                  email = value;
+                },
+              ),
               SizedBox(height: 15.0),
-              EnterField(fieldTitle: 'Password:'),
+              EnterField(
+                fieldTitle: 'Password:',
+                onChanged: (value) {
+                  password = value;
+                },
+              ),
               SizedBox(height: 25.0),
               WPRaisedButton(
                 buttonTitle: 'Login',
-                onPressed: () => print('button pressed'),
+                onPressed: () async {
+                  setState(() {
+                    showSpinner = true;
+                  });
+                  try {
+                    final newUser = await _auth.signInWithEmailAndPassword(
+                        email: email, password: password);
+                    if (newUser != null)
+                      Navigator.pushNamed(context, '/welcomepage');
+                    setState(() {
+                      showSpinner = false;
+                    });
+                  } catch (e) {
+                    print(e);
+                  }
+                },
               ),
               SizedBox(height: 25.0),
               SocialButtons(),
