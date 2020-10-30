@@ -22,6 +22,8 @@ class _Signup3State extends State<Signup3> {
               SizedBox(
                 height: 20.0,
               ),
+              EnterField(fieldTitle: 'Date of Birth:'),
+              SizedBox(height: 15.0),
               EnterField(fieldTitle: 'College Name:'),
               SizedBox(height: 15.0),
               EnterField(fieldTitle: 'College Roll Number:'),
