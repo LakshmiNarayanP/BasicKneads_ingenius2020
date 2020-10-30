@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -26,8 +27,28 @@ class _LoginPageState extends State<LoginPage> {
                 height: 40.0,
               ),
               EnterField(fieldTitle: 'Username:'),
-              SizedBox(height: 20.0),
+              SizedBox(height: 15.0),
               EnterField(fieldTitle: 'Password:'),
+              SizedBox(height: 25.0),
+              WPRaisedButton(
+                buttonTitle: 'Login',
+                onPressed: () => print('button pressed'),
+              ),
+              SizedBox(height: 25.0),
+              Text(
+                'Or continue with',
+                style: kPoppinTitle.copyWith(fontSize: 18.0),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SignInButton(
+                    Buttons.Facebook,
+                    mini: true,
+                    onPressed: () {},
+                  ),
+                ],
+              )
             ],
           ),
         ),
@@ -56,13 +77,18 @@ class EnterField extends StatelessWidget {
               ),
             ),
           ),
-          TextField(
-            decoration: InputDecoration(
-              filled: true,
-              fillColor: Colors.white,
-              enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                  borderSide: BorderSide(color: Colors.white, width: 1)),
+          Material(
+            elevation: 10.0,
+            shadowColor: Colors.grey[400],
+            borderRadius: BorderRadius.all(Radius.circular(30.0)),
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    borderSide: BorderSide(color: Colors.white, width: 1)),
+              ),
             ),
           ),
         ],
