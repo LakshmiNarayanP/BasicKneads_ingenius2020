@@ -198,7 +198,7 @@ class _HomePage1State extends State<HomePage1> {
                                   padding: const EdgeInsets.fromLTRB(
                                       0.0, 30.0, 0.0, 0.0),
                                   child: Image(
-                                    image: AssetImage('images/snacks.png'),
+                                    image: AssetImage('images/snacks_2.png'),
                                   ),
                                 ),
                                 Padding(

@@ -61,6 +61,7 @@ class MenuButtons extends StatelessWidget {
         child: RaisedButton(
           color: buttoncolor,
           onPressed: () {
+            Navigator.popUntil(context, ModalRoute.withName('/HomePage_Meals'));
             Navigator.pushNamed(context, pageonclick);
           },
           textColor: Colors.black,
