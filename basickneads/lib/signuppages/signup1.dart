@@ -19,7 +19,7 @@ class Signup1 extends StatelessWidget {
               ),
               WPRaisedButton(
                 buttonTitle: 'New account',
-                onPressed: () => {},
+                onPressed: () => {Navigator.pushNamed(context, '/signup2')},
               ),
               SizedBox(height: 50.0),
               SocialButtons(),
