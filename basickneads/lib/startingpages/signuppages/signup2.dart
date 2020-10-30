@@ -22,11 +22,11 @@ class _Signup2State extends State<Signup2> {
               SizedBox(
                 height: 20.0,
               ),
-              EnterField(fieldTitle: 'Name:'),
-              SizedBox(height: 10.0),
-              EnterField(fieldTitle: 'Phone Number:'),
-              SizedBox(height: 10.0),
               EnterField(fieldTitle: 'Email Address:'),
+              SizedBox(height: 10.0),
+              EnterField(fieldTitle: 'Password:'),
+              SizedBox(height: 10.0),
+              EnterField(fieldTitle: 'Confirm Password:'),
               SizedBox(height: 20.0),
               WPRaisedButton(
                 buttonTitle: 'Next',
