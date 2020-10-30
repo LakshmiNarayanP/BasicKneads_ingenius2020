@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import 'package:basickneads/constants.dart';
 
 class LoginPage extends StatefulWidget {
   @override
