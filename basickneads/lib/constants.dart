@@ -52,7 +52,7 @@ class WPRaisedButton extends StatelessWidget {
           buttonTitle,
           style: TextStyle(fontFamily: 'Poppins', fontSize: 25),
         ),
-        onPressed: () => {print('pressed')},
+        onPressed: onPressed,
         color: Colors.grey[800],
         textColor: Colors.white,
         padding: EdgeInsets.all(8.0),
