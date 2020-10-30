@@ -24,7 +24,14 @@ class OrangeCard extends StatelessWidget {
           Radius.circular(20.0),
         ),
       ),
-      child: container,
+      child: Column(
+        children: [
+          SizedBox(
+            height: 20.0,
+          ),
+          container,
+        ],
+      ),
     );
   }
 }
