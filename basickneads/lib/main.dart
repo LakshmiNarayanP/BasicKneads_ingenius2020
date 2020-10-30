@@ -1,9 +1,13 @@
-import 'package:basickneads/signuppages/signup1.dart';
+import 'package:basickneads/startingpages/signuppages/signup1.dart';
+import 'package:basickneads/startingpages/signuppages/signup2.dart';
 import 'package:flutter/material.dart';
-import 'splashScreen.dart';
-import 'welcomePage.dart';
-import 'loginPage.dart';
-import 'signuppages/signup1.dart';
+import 'startingpages/splashScreen.dart';
+import 'startingpages/welcomePage.dart';
+import 'startingpages/loginPage.dart';
+import 'startingpages/signuppages/signup1.dart';
+import 'startingpages/signuppages/signup2.dart';
+import 'startingpages/signuppages/signup3.dart';
+import 'startingpages/allsetPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +22,9 @@ class MyApp extends StatelessWidget {
         '/welcomepage': (context) => WelcomePage(),
         '/loginpage': (context) => LoginPage(),
         '/signup1': (context) => Signup1(),
+        '/signup2': (context) => Signup2(),
+        '/signup3': (context) => Signup3(),
+        '/allsetpage': (context) => AllSetPage(),
       },
     );
   }
