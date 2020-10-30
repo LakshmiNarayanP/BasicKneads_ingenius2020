@@ -39,6 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15.0),
                 EnterField(
                   fieldTitle: 'Password:',
+                  keyboardType: TextInputType.text,
                   onChanged: (value) {
                     password = value;
                   },
