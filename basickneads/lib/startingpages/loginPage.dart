@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:basickneads/constants.dart';
 
-class Signup2 extends StatefulWidget {
+class LoginPage extends StatefulWidget {
   @override
-  _Signup2State createState() => _Signup2State();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _Signup2State extends State<Signup2> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,22 +16,22 @@ class _Signup2State extends State<Signup2> {
           child: Column(
             children: [
               Text(
-                'Sign Up',
+                'Login',
                 style: kPoppinTitle,
               ),
               SizedBox(
-                height: 20.0,
+                height: 40.0,
               ),
-              EnterField(fieldTitle: 'Name:'),
+              EnterField(fieldTitle: 'Username:'),
               SizedBox(height: 15.0),
-              EnterField(fieldTitle: 'Phone Number:'),
-              SizedBox(height: 15.0),
-              EnterField(fieldTitle: 'Email Address:'),
+              EnterField(fieldTitle: 'Password:'),
               SizedBox(height: 25.0),
               WPRaisedButton(
-                buttonTitle: 'Next',
+                buttonTitle: 'Login',
                 onPressed: () => print('button pressed'),
               ),
+              SizedBox(height: 25.0),
+              SocialButtons(),
             ],
           ),
         ),
