@@ -22,7 +22,4 @@ We plan on developing an app to which colleges and corporate offices can registe
 This app can be used in weddings and other social gatherings in the future, hence, allowing the caterers to prepare the required amount of food and reduce wastage.
 
 ### TEAM:
-Geethika Kommineni
-Hari Raagav T R
-Lakshminarayan Padisetty
-Sahanya Hebbar
+Lakshminarayan Padisetty, Sahanya Hebbar, Hari Raagav T R and Geethika Kommineni.
