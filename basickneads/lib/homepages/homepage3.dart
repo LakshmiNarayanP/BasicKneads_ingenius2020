@@ -102,216 +102,23 @@ class _HomePageSnacksState extends State<HomePageSnacks> {
                   //shrinkWrap: true,
                   physics: AlwaysScrollableScrollPhysics(),
                   children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Roti - Curry'),
-                        ],
-                      ),
+                    FoodItemCard(
+                      foodname: 's1',
                     ),
                     SizedBox(
                       height: 10.0,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Rice Meal'),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 10.0),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Burger'),
-                        ],
-                      ),
+                    FoodItemCard(
+                      foodname: 's2',
                     ),
                     SizedBox(
                       height: 10.0,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Samosa'),
-                        ],
-                      ),
+                    FoodItemCard(
+                      foodname: 's3',
                     ),
                     SizedBox(
                       height: 10.0,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Coffee'),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 1.0,
-                                blurRadius: 2.0,
-                                offset: Offset(0, 1))
-                          ]),
-                      height: 100.0,
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 80.0,
-                              height: 80.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.yellow[800],
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0))),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20.0,
-                          ),
-                          Text('Milkshake'),
-                        ],
-                      ),
                     ),
                   ],
                 ),
