@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:basickneads/constants2.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+var _firestore = FirebaseFirestore.instance;
 
 class HomePageMeals extends StatefulWidget {
   @override
