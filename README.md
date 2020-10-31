@@ -13,7 +13,7 @@ The objective of our project is to design an efficient system to solve the probl
 ## Problem with the present system: 
 Canteens in many colleges and offices either prepare food as and when students/employees order them during lunch break, hence, wasting their valuable time or produce food in masses, which when not consumed are thrown mercilessly into bins. Sometimes, students prefer to skip lunch in order to escape the hassle which results in them ruining their health.
 
-## Software used: Python 
+## Platform used: Flutter and Dart
 
 ## Hack: 
 We plan on developing an app to which colleges and corporate offices can register themselves to. The head chef will be allowed to upload the menu for the day a few hours before the break time, giving the students/employees time to decide what they would fancy for snacks/lunch an hour or two before their break time. This also gives the chefs sufficient time to prepare food according to the demand before rush hour. Not only will the app suggest the user food they may like, based on their previous orders but also keeps a check on their calorie intake via a health card to help the current fitness enthusiast generation. In addition to this, the canteens will be allowed to customize the app by adding the option of delivery, etc. Digital transactions will also be made available on the app to help promote a cashless economy.
