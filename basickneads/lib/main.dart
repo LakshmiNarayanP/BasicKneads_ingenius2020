@@ -275,24 +275,28 @@ class _HomePage1State extends State<HomePage1> {
                     children: <Widget>[
                       FoodItemCard(
                         foodname: 'Roti Curry',
+                        price: '40',
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
                       FoodItemCard(
                         foodname: 'Sandwhich',
+                        price: '40',
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
                       FoodItemCard(
                         foodname: 'Filter Coffee',
+                        price: '10',
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
                       FoodItemCard(
                         foodname: 'Lays chips',
+                        price: '20',
                       ),
                       SizedBox(
                         height: 10.0,
