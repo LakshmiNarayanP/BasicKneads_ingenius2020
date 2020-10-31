@@ -25,7 +25,7 @@ We plan on developing an app to which colleges and corporate offices can registe
 This app can be used in weddings and other social gatherings in the future, hence, allowing the caterers to prepare the required amount of food and reduce wastage. A minimal expansion of the app can be used in hostels to ease the process to a certain extent.
 
 ### TEAM:
-Lakshmi Narayan Paidisetty
-Sahanya Hebbar 
-Hari Raagav T R 
+Lakshmi Narayan Paidisetty;
+Sahanya Hebbar; 
+Hari Raagav T R; 
 Geethika Kommineni.
