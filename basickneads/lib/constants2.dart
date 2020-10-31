@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
+TextStyle kFoodText = TextStyle(fontFamily: 'Poppins', fontSize: 20);
+
 class FoodItemCard extends StatelessWidget {
-  FoodItemCard({this.foodname});
+  FoodItemCard({this.foodname, this.price});
   final String foodname;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,7 +35,21 @@ class FoodItemCard extends StatelessWidget {
           SizedBox(
             width: 20.0,
           ),
-          Text(foodname),
+          Expanded(
+            child: Text(
+              foodname,
+              style: kFoodText,
+            ),
+          ),
+          SizedBox(
+            width: 20.0,
+          ),
+          Expanded(
+            child: Text(
+              price,
+              style: kFoodText,
+            ),
+          ),
         ],
       ),
     );

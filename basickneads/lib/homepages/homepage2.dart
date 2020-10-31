@@ -101,29 +101,34 @@ class _HomePageMealsState extends State<HomePageMeals> {
               Container(
                 height: 400.0,
                 width: 380.0,
-                child: ListView(
-                  //shrinkWrap: true,
-                  physics: AlwaysScrollableScrollPhysics(),
-                  children: <Widget>[
-                    FoodItemCard(
-                      foodname: 'meal1',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    FoodItemCard(
-                      foodname: 'meal2',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    FoodItemCard(
-                      foodname: 'meal3',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                  ],
+                child: StreamBuilder(
+                  stream: _firestore.collection('meals').snapshots(),
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Colors.orange[400],
+                        ),
+                      );
+                    }
+                    final meals = snapshot.data.documents;
+                    List<FoodItemCard> mealsMenu = [];
+                    for (var meal in meals) {
+                      final mealName = meal.get('Name');
+                      final mealPrice = meal.get('Price');
+                      final mealWidget = FoodItemCard(
+                        foodname: mealName,
+                        price: mealPrice,
+                      );
+                      mealsMenu.add(mealWidget);
+                    }
+                    return Expanded(
+                      child: ListView(
+                        shrinkWrap: true,
+                        children: mealsMenu,
+                      ),
+                    );
+                  },
                 ),
               )
             ],
