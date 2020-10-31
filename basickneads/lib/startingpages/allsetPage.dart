@@ -20,6 +20,7 @@ class _AllSetPageState extends State<AllSetPage> {
   }
 
   route() {
+    Navigator.popUntil(context, ModalRoute.withName('/welcomepage'));
     Navigator.pushNamed(context, '/HomePage_Meals');
   }
 
