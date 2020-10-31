@@ -130,28 +130,6 @@ class _HomePageDrinksState extends State<HomePageDrinks> {
                     );
                   },
                 ),
-                // ListView(
-                //   //shrinkWrap: true,
-                //   physics: AlwaysScrollableScrollPhysics(),
-                //   children: <Widget>[
-                //     FoodItemCard(
-                //       foodname: 'd1',
-                //     ),
-                //     SizedBox(
-                //       height: 10.0,
-                //     ),
-                //     FoodItemCard(
-                //       foodname: 'd2',
-                //     ),
-                //     SizedBox(
-                //       height: 10.0,
-                //     ),
-                //     FoodItemCard(
-                //       foodname: 'd3',
-                //     ),
-                //     SizedBox(
-                //       height: 10.0,
-                //     ),
               ),
             ],
           ),

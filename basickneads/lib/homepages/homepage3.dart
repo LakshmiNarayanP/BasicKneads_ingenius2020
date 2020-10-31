@@ -131,28 +131,6 @@ class _HomePageSnacksState extends State<HomePageSnacks> {
                       );
                     },
                   ),
-                  // ListView(
-                  //   //shrinkWrap: true,
-                  //   physics: AlwaysScrollableScrollPhysics(),
-                  //   children: <Widget>[
-                  //     FoodItemCard(
-                  //       foodname: 's1',
-                  //     ),
-                  //     SizedBox(
-                  //       height: 10.0,
-                  //     ),
-                  //     FoodItemCard(
-                  //       foodname: 's2',
-                  //     ),
-                  //     SizedBox(
-                  //       height: 10.0,
-                  //     ),
-                  //     FoodItemCard(
-                  //       foodname: 's3',
-                  //     ),
-                  //     SizedBox(
-                  //       height: 10.0,
-                  //     ),
                 ),
               ],
             ),
