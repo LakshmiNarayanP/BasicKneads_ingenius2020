@@ -5,7 +5,7 @@ Vision of App:
 https://youtu.be/Fq4ablow_EI
 
 24 hour hack implementation of the app idea:
-https://youtu.be/TVW3rtOm8t8
+https://youtu.be/z4LN0SWk3B8
 
 ## Short Summary:
 We students enter the canteen during break times to see a long queue waiting to receive their food. Many times it so happens that, by the time we receive our plate of food,  we are either forced to miss class/work and eat, or waste food and reach class/do work on time. So, we plan on making an app, where students/employees can choose what they would like to eat an hour or two before their breaktime. This would give plenty of time for the chefs to get an idea of what the orders for the day is, and prepare the food in time; and the students/employees could come in and collect their food without any waiting time.
