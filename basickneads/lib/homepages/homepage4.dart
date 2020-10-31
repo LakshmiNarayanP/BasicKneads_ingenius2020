@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:basickneads/constants2.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+var _firestore = FirebaseFirestore.instance;
 
 class HomePageDrinks extends StatefulWidget {
   @override
@@ -98,31 +101,58 @@ class _HomePageDrinksState extends State<HomePageDrinks> {
               Container(
                 height: 400.0,
                 width: 380.0,
-                child: ListView(
-                  //shrinkWrap: true,
-                  physics: AlwaysScrollableScrollPhysics(),
-                  children: <Widget>[
-                    FoodItemCard(
-                      foodname: 'd1',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    FoodItemCard(
-                      foodname: 'd2',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    FoodItemCard(
-                      foodname: 'd3',
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                  ],
+                child: StreamBuilder(
+                  stream: _firestore.collection('drinks').snapshots(),
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Colors.orange[400],
+                        ),
+                      );
+                    }
+                    final drinks = snapshot.data.documents;
+                    List<FoodItemCard> drinksMenu = [];
+                    for (var drink in drinks) {
+                      final drinkName = drink.get('Name');
+                      final drinkPrice = drink.get('Price');
+                      final drinkWidget = FoodItemCard(
+                        foodname: drinkName,
+                        price: drinkPrice,
+                      );
+                      drinksMenu.add(drinkWidget);
+                    }
+                    return Expanded(
+                      child: ListView(
+                        shrinkWrap: true,
+                        children: drinksMenu,
+                      ),
+                    );
+                  },
                 ),
-              )
+                // ListView(
+                //   //shrinkWrap: true,
+                //   physics: AlwaysScrollableScrollPhysics(),
+                //   children: <Widget>[
+                //     FoodItemCard(
+                //       foodname: 'd1',
+                //     ),
+                //     SizedBox(
+                //       height: 10.0,
+                //     ),
+                //     FoodItemCard(
+                //       foodname: 'd2',
+                //     ),
+                //     SizedBox(
+                //       height: 10.0,
+                //     ),
+                //     FoodItemCard(
+                //       foodname: 'd3',
+                //     ),
+                //     SizedBox(
+                //       height: 10.0,
+                //     ),
+              ),
             ],
           ),
         ),

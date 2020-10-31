@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class FoodItemCard extends StatelessWidget {
-  FoodItemCard({this.foodname});
+  FoodItemCard({this.foodname, this.price});
   final String foodname;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,6 +34,10 @@ class FoodItemCard extends StatelessWidget {
             width: 20.0,
           ),
           Text(foodname),
+          SizedBox(
+            width: 20.0,
+          ),
+          Text(price),
         ],
       ),
     );

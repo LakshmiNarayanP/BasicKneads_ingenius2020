@@ -103,7 +103,7 @@ class _HomePageSnacksState extends State<HomePageSnacks> {
                   height: 400.0,
                   width: 380.0,
                   child: StreamBuilder(
-                    stream: _firestore.collection('meals').snapshots(),
+                    stream: _firestore.collection('snacks').snapshots(),
                     builder: (context, snapshot) {
                       if (!snapshot.hasData) {
                         return Center(
@@ -113,12 +113,15 @@ class _HomePageSnacksState extends State<HomePageSnacks> {
                         );
                       }
                       final snacks = snapshot.data.documents;
-                      List<Text> snacksMenu = [];
+                      List<FoodItemCard> snacksMenu = [];
                       for (var snack in snacks) {
                         final snackName = snack.get('Name');
                         final snackPrice = snack.get('Price');
-                        final mealWidget = Text('$snackName     $snackPrice');
-                        snacksMenu.add(mealWidget);
+                        final snackWidget = FoodItemCard(
+                          foodname: snackName,
+                          price: snackPrice,
+                        );
+                        snacksMenu.add(snackWidget);
                       }
                       return Expanded(
                         child: ListView(

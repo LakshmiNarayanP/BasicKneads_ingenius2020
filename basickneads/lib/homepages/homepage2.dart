@@ -112,11 +112,14 @@ class _HomePageMealsState extends State<HomePageMeals> {
                       );
                     }
                     final meals = snapshot.data.documents;
-                    List<Text> mealsMenu = [];
+                    List<FoodItemCard> mealsMenu = [];
                     for (var meal in meals) {
                       final mealName = meal.get('Name');
                       final mealPrice = meal.get('Price');
-                      final mealWidget = Text('$mealName     $mealPrice');
+                      final mealWidget = FoodItemCard(
+                        foodname: mealName,
+                        price: mealPrice,
+                      );
                       mealsMenu.add(mealWidget);
                     }
                     return Expanded(
