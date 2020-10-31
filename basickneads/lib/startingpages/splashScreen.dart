@@ -29,6 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
         decoration: kDoodle,
         child: Center(
             child: CircleAvatar(
+          backgroundImage: AssetImage('images/circle.jpeg'),
           radius: 230.0,
         )),
       ),
