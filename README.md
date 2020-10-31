@@ -22,7 +22,10 @@ Canteens in many colleges and offices either prepare food as and when students/e
 We plan on developing an app to which colleges and corporate offices can register themselves to. The head chef will be allowed to upload the menu for the day a few hours before the break time, giving the students/employees time to decide what they would fancy for snacks/lunch an hour or two before their break time. This also gives the chefs sufficient time to prepare food according to the demand before rush hour. Not only will the app suggest the user food they may like, based on their previous orders but also keeps a check on their calorie intake via a health card to help the current fitness enthusiast generation. In addition to this, the canteens will be allowed to customize the app by adding the option of delivery, etc. Digital transactions will also be made available on the app to help promote a cashless economy.
 
 ## Future Enhancements: 
-This app can be used in weddings and other social gatherings in the future, hence, allowing the caterers to prepare the required amount of food and reduce wastage.
+This app can be used in weddings and other social gatherings in the future, hence, allowing the caterers to prepare the required amount of food and reduce wastage. A minimal expansion of the app can be used in hostels to ease the process to a certain extent.
 
 ### TEAM:
-Lakshminarayan Padisetty, Sahanya Hebbar, Hari Raagav T R and Geethika Kommineni.
+Lakshmi Narayan Paidisetty
+Sahanya Hebbar 
+Hari Raagav T R 
+Geethika Kommineni.
