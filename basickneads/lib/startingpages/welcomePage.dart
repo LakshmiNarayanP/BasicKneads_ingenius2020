@@ -22,7 +22,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 style: TextStyle(fontFamily: 'Pacifico', fontSize: 40),
               ),
               GFAvatar(
-                backgroundImage: AssetImage('images/leaf.png'),
+                backgroundImage: AssetImage('images/welcome.jpeg'),
                 shape: GFAvatarShape.square,
                 radius: 100.0,
               ),
