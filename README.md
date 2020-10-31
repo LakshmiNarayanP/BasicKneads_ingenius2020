@@ -4,7 +4,7 @@
 Vision of App:
 https://youtu.be/Fq4ablow_EI
 
-24 hour hack implementation of the app idea
+24 hour hack implementation of the app idea:
 https://youtu.be/TVW3rtOm8t8
 
 ## Short Summary:
